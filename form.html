@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us </title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="full.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a href="index.html" class="logo"> <i class="fas fa-untensils"></i>Star Organic</a>
+       
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="form.html">Contact Us</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="review.html">Query</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="gallery.html">Show Case Gallery</a>
+              </li>
+              <li class="nav-item dropdown mx-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="cereal.html">Cereal</a></li>
+                  <li><a class="dropdown-item" href="Shan masla.html">Shan Masala</a></li>
+                  <li><a class="dropdown-item" href="tea.html">Tea</a></li>
+                  <li><a class="dropdown-item" href="rice.html">Rice</a></li>
+                  <li><a class="dropdown-item" href="spices.html">Spices & Condiments</a></li>
+                  <li><a class="dropdown-item" href="flour.html">Flour</a></li>
+                  <li><a class="dropdown-item" href="cooking oil.html">Cooking Oil</a></li>
+                  <li><a class="dropdown-item" href="pulses.html">Pulses</a></li>
+                  <li><a class="dropdown-item" href="Salt.html">Salt</a></li>
+                </ul>
+              </li>
+             
+            </ul>
+            
+           
+          </div>
+        </div>
+      </nav>
+    
+   <section id="contact-over">
+    <div class="container-store">
+        <form id="formBill">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Billing address</h3>
+                    <div class="inputBox">
+                        <span>Full name :</span>
+                        <input type="text" placeholder="john deo" id="cname" required>
+                    </div>
+                    <div class="inputBox">
+                        <span>Email :</span>
+                        <input type="email" placeholder="@example.com" id="cnumber" required >
+                    </div>
+                    <div class="inputBox">
+                        <span>Address :</span>
+                        <input type="text" placeholder="city-area-house no" id="caddress" required >
+                    </div>
+                    <div class="inputBox">
+                        <span>City :</span>
+                        <input type="text" placeholder="Karachi"  id="ccity" required >
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>State :</span>
+                            <input type="text" placeholder="Pakistan" id="cstate" required >
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="number" placeholder="123 346" id="czipcode" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Payment Method</h3>
+                    <div class="inputBox">
+                        <span>card accepted</span>
+                        <img src="paypal.png" alt="" >
+                    </div>
+                    <div class="inputBox">
+                        <span>Name On Card</span>
+                        <input type="text" placeholder="mr.john deo" id="caddress" required>
+                    </div>
+                  
+                    <div class="inputBox">
+                        <span>Credit Card Number</span>
+                        <input type="number" placeholder="111-222-333-444" id="cardno"  required>
+                    </div>
+                    <div class="inputBox">
+                        <span>exp month:</span>
+                        <input type="text" placeholder="feburary" id="month" required>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp year :</span>
+                            <input type="number" placeholder="2023" id="expyear" required >
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="" placeholder="1234" id="cw" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="button" class="submit-btn" onclick="openPopup()">order confirmed</input> -->
+            <input type="submit" onclick="openPopup()" class="submit-btn" value="order confirmed">
+            <p id="onError"></p>
+            
+        </form>
+    </div>
+    <div class="popup" id="popup">
+        <img src="tick.png" alt="">
+        <h2>Thankyou!</h2>
+        <p>your order is placed</p>
+        <button type="submit" onclick="closePopup()">Ok</button>
+    </div>
+
+
+
+
+   </section>
+   <!-- <div class="loader-container">
+    <img src="image/1490.gif" alt="">
+</div> -->
+<!-- <script src="full.js"></script>
+    <script>
+         function openPopup(){
+                    
+            let popup = document.querySelector('.popup')
+            popup.classList.add("open-popup");
+          
+        }
+        function closePopup(){
+    popup.classList.remove("open-popup");
+}
+       -->
+
+
+
+//         document.querySelector('.submit-btn').addEventListener('click',(e)=>{
+
+//         e.preventDefault()
+// let cname = document.getElementById('cname').value;
+// let cnumber = document.getElementById('cnumber').value;
+// let corder = document.getElementById('corder').value;
+// let cstate = document.getElementById('cstate').value;
+// let cquantity = document.getElementById('cquantity').value;
+// let caddress = document.getElementById('caddress').value;
+// let cardno = document.getElementById('cardno').value;
+// let cmonth= document.getElementById('month').value;
+// let cexpyear = document.getElementById('expyear').value;
+// let cw = document.getElementById('cw').value;
+//         if(cname !== '' && cnumber !== '' && corder !== '' && cquantity !== '' && cstate !== '' && caddress !== '' && cardno !== '' && cmonth !== '' && cexpyear !== ''  && cw !== ''){
+//             openPopup()
+            
+//         }
+//         else{
+//                 alert('Please fill all input fields')
+          
+//             }
+        
+        })
+
+        // function openPopup(){
+        //     popup.classList.add("open-popup");
+        // }
+        // function closePopup(){
+        //     popup.classList.remove("open-popup");
+        // }
+                                      
+        // document.querySelector("#onError").innerHTML = `Please Select all Require Fields`
+
+
+
+
+
+
+
+        // document.querySelector(".popup").style.display = "none";
+         // let popup = document.getElementById("popup");
+
+
+
+            
+    <script>
+
+let popup = document.querySelector('.popup');
+let form = document.querySelector('#formBill');
+function openPopup(e){
+          const name = document.getElementById("cname").value;
+          const address = document.getElementById("caddress").value;
+          const city = document.getElementById("ccity").value;
+          const state = document.getElementById("cstate").value;
+          const zip = document.getElementById("czipcode").value;
+          const card = document.getElementById("cardno").value;
+          const exp = document.getElementById("expyear").value;
+          const cvv = document.getElementById("cw").value;
+
+
+
+
+        
+
+          if((name && address && city && state && zip && card && exp && cvv)!== ""){
+            form.classList.add("BillingForm");
+         
+            popup.classList.add("open-popup");}
+            
+          }
+            
+          
+        
+        function closePopup(){
+          window.location.reload();
+          form.classList.remove("BillingForm");
+           popup.classList.remove("open-popup");}
+        
+  
+      
+  
+          // Send data to server or process payment
+        
+  
+      // Display thank you message
+      // const thankYou = document.getElementById("thank-you");
+      // const amount = "59.99"; // Set the amount charged here
+      // document.getElementById("name-display").textContent = name;
+      // document.getElementById("address-display").textContent = address;
+      // document.getElementById("city-display").textContent = city;
+      // document.getElementById("state-display").textContent = state;
+      // document.getElementById("zip-display").textContent = zip;
+      // document.getElementById("amount-display").textContent = "$" + amount;
+    
+    
+  </script>
+
+
+
+       
+    <!-- </script> -->
+</body>
+</html>

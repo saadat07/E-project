@@ -1,0 +1,288 @@
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0. .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'nunito',sans-serif;
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    /* overflow: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth; */
+
+}
+.section{
+    padding: 2rem 9%;
+}
+
+.html{
+    font-size: 50%;
+}
+
+.sub-heading{
+text-align: center;
+color: var(--green);
+font-size: 2rem;
+padding-top: 1rem;
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .contact from .inputBox .input{
+        width: 100%;
+    }
+
+}
+
+.heading{
+text-align: center;
+color: var(--black);
+font-size: 3rem;
+padding-bottom: 2rem;
+}
+
+.contact form{
+    width: 90rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0, 0, .2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+}
+
+.contact form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .inputBox .input{
+    width: 40%;
+}
+ 
+.contact form .inputBox .input span{
+    /* display: block; */
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    /* color: (--light-color); */
+}
+
+.contact form .inputBox .input input,
+.contact form .inputBox .input textarea{
+    background: #eee;
+    border-radius: .5rem;
+    /* padding: 1rem; */
+    font-size: 1.6rem;
+    color: (--black);
+    text-transform: none;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.contact form .inputBox .input input:focus,
+.contact form .inputBox .input textarea:focus{
+    border: .1rem solid var(--green);
+}
+
+.contact form .inputBox .input textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.btn{
+    margin-top:  1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--black);
+    border-radius:.5rem ;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+
+.btn:hover{
+    background: var(--green);
+    letter-spacing: .1rem;
+}
+
+.contact form .inputBox .btn{
+    margin-top: 0;
+}
+
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rerm;
+    align-items: center;
+}
+
+ .about .row .image{
+    flex: 1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+}
+
+.about .row .content h3{
+    color: var(--black);
+    font-size: 4rem;
+    padding: .5rem;
+}
+
+.about .row .content p{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    line-height: 2;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+}
+
+.about .row .content .icons-container .icons{
+    background: #eee;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .content .icons-container .icons i{
+    font-size: 2.5rem;
+    color: var(--green);
+}
+
+.about .row .content .icons-container .icons span{
+    font-size: 1.5rem;
+    color: var(--black);
+}
+
+
+
+.review-slider{
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: .1rem solid rgba(0,0, 0, .2);
+    border-radius: .5rem;
+    position: relative;
+}
+
+
+.review-slider .fa-quote-right{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    font-size: 6rem;
+    color: #ccc;
+}
+
+.review-slider .user{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.review-slider .user img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-slider .user h3{
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+}
+
+.review-slider .user i{
+    font-size: 1.3rem;
+    color: var(--green);
+}
+
+.review-slider p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+}
+.plasticbox{
+    text-align: center;
+    color: #192a56;
+    top: 0px;bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+
+}
+.steelbox{
+    border: 1px solid #fff;
+    background-color: #eee;
+}
+.plasticbox h3{
+    font-size: 35px;
+    color: #192a56;
+    font-weight: 500;
+}
+.plasticbox h1{
+    font-size: 25px;
+    color: #27ae60;
+    font-weight: 300;
+
+}
+.store-cart{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+}
+.best h2{
+    color: #192a56;
+    font-weight: 400;
+    font-size: 34px;
+    text-align: center;
+    padding: 5px 5px;
+    right: 8px;
+
+}
+.store-cart .item img{
+    width: 600px;
+    margin-left: 20px;
+    
+}
+.para{
+    font-size: 20px;
+    font-weight: 200;
+    color: #192a56;
+    margin-left: 10px;
+}
+.card-img-top{
+    background-color: #666;
+}
